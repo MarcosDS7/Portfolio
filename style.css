@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* ------------- */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafaf8;
+  color: #000000;
+}
+html {
+  height: 2000px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+ul,
+ol,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin-left: 20px;
+
+  width: 130px;
+  height: 40px;
+
+  border-radius: 50px;
+
+  background-image: linear-gradient(to bottom, #f9c727, #f09416);
+  color: #fff;
+
+  transition: all ease 0.2s;
+}
+.btn-primary:hover {
+  color: #fff;
+  box-shadow: 0 30px 30px #f0941630;
+}
+.blur-roxo {
+  position: absolute;
+  left: 0;
+  max-width: 270px;
+  z-index: -1;
+}
+.services .blur-roxo2 {
+  position: absolute;
+  right: 0;
+  max-width: 470px;
+  z-index: -2;
+  transform: rotate(180deg);
+}
+.blur-blue {
+  position: absolute;
+  max-width: 270px;
+  bottom: -10px;
+  z-index: -1;
+}
+/* --------------------------------- */
+
+header {
+  width: 100%;
+  height: 80px;
+
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li a {
+  color: #000;
+  padding: 20px;
+  transition: color ease 0.2s;
+}
+header nav ul li a:hover {
+  color: #f09416;
+}
+.logo {
+  color: #000;
+  font-weight: 500;
+}
+/* ------------------------ */
+.start {
+  width: 100%;
+  height: 450px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+.start .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start .quote h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #f09416;
+  line-height: 40px;
+
+  margin-bottom: 10px;
+}
+.start .quote h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #242d49;
+  line-height: 40px;
+}
+.start .quote p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.start .quote .btn-primary {
+  margin: 0;
+}
+/* ------------------- */
+.services {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+.services .quote {
+  max-width: 500px;
+}
+
+.services .quote h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #f09416;
+  line-height: 30px;
+}
+.services .quote h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #242d49;
+  line-height: 20px;
+}
+.services .quote p {
+  font-size: 18px;
+  margin: 5px 0 10px 0px;
+}
+.services .quote .btn-primary {
+  margin: 0;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -70px;
+}
+.cards ul {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 40px 40px 40px 40px;
+  gap: 20px;
+}
+.cards ul li:nth-child(1) {
+  grid-row: 1/2;
+  grid-column: 4/4;
+}
+.cards ul li:nth-child(2) {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.cards ul li:nth-child(3) {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.cards ul li:nth-child(4) {
+  grid-row: 4/4;
+}
+
+.cards ul li {
+  height: 220px;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+
+  box-shadow: 0px 12px 24px #242d4930;
+  border-radius: 4px;
+
+  transition: transform ease-in-out 0.2s;
+}
+.cards ul li:hover {
+  transform: scale(1.1);
+}
+.cards ul li div h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #242d49;
+}
+.cards ul li div p {
+  font-size: 15px;
+  color: #242d49;
+  margin-top: 10px;
+}
+.cards ul li .icon {
+  max-width: 35px;
+  max-height: 45px;
+}
