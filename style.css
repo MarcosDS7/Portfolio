@@ -113,6 +113,10 @@ header nav ul li a:hover {
   color: #000;
   font-weight: 500;
 }
+
+#btn-mobile {
+  display: none;
+}
 /* ------------------------ */
 .start {
   width: 100%;
@@ -195,7 +199,7 @@ header nav ul li a:hover {
 }
 .cards ul {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 40px 40px 40px;
   gap: 20px;
 }
@@ -216,7 +220,8 @@ header nav ul li a:hover {
 }
 
 .cards ul li {
-  height: 220px;
+  height: 260px;
+
   padding: 10px;
 
   display: grid;

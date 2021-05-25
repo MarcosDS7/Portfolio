@@ -8,17 +8,23 @@
   <title>Portfólio | Bem vindo</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsivo.css">
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <div class="container">
       <a href="index.html" class="logo">
         Portfólio
       </a>
 
-      <nav>
-        <ul>
+      <nav id="nav">
+
+        <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+          <span id="hamburger"></span>
+        </button>
+
+        <ul id="menu" role="menu">
           <li><a href="">Sobre</a></li>
           <li><a href="">Serviços</a></li>
           <li><a href="">Projetos</a></li>
