@@ -103,4 +103,17 @@
     margin-top: 30px;
     justify-content: center;
   }
+  /* -------------------------------------- */
+  .projects {
+    margin-top: 100px;
+  }
+
+  .projects ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 340px);
+    row-gap: 50px;
+    margin-top: 40px;
+  }
+  /* ----------------- */
 }
