@@ -80,6 +80,15 @@ a {
   bottom: -10px;
   z-index: -1;
 }
+body.dark .blur-roxo {
+  opacity: 0.1;
+}
+body.dark .services .blur-roxo2 {
+  opacity: 0.1;
+}
+body.dark .blur-blue {
+  opacity: 0.1;
+}
 /* --------------------------------- */
 
 header {
@@ -104,8 +113,11 @@ header nav ul {
 }
 header nav ul li a {
   color: #000;
-  padding: 20px;
   transition: color ease 0.2s;
+}
+header nav ul a {
+  padding: 10px;
+  margin: 0 20px;
 }
 header nav ul li a:hover {
   color: #f09416;
@@ -378,4 +390,96 @@ footer ul li a:hover {
 }
 .after-footer p {
   font-style: italic;
+}
+/* --------------------------------- */
+.dark {
+  background: #24292d;
+}
+
+body.dark header nav ul li a {
+  color: #fff;
+}
+body.dark header nav ul li a:hover {
+  color: #f09416;
+}
+body.dark header nav ul li a.btn-primary:hover {
+  color: #fff;
+}
+
+body.dark .logo {
+  color: #fff;
+}
+/* ------------------ */
+body.dark .start .quote h1 {
+  color: #fff;
+}
+
+body.dark .start .quote h2 {
+  color: #d9d9d9;
+}
+body.dark .start .quote p {
+  color: #d9d9d9;
+}
+/* ------------------ */
+
+body.dark .services .quote h2 {
+  color: #fff;
+}
+body.dark .services .quote h3 {
+  color: #d9d9d9;
+}
+body.dark .services .quote p {
+  color: #d9d9d9;
+}
+body.dark .cards ul li {
+  background-color: #fff;
+}
+/* ----------- */
+body.dark .projects h2 {
+  color: #fff;
+}
+body.dark .projects h2 span {
+  color: #d9d9d9;
+}
+
+body.dark .projects section div p {
+  color: #fff;
+}
+/* ----------- */
+body.dark footer ul li h4 {
+  color: #fff;
+}
+body.dark footer ul li h4 span {
+  color: #d9d9d9;
+}
+
+body.dark footer ul li a {
+  color: #d9d9d9;
+}
+body.dark footer ul li a:hover {
+  color: #f09416;
+}
+body.dark footer ul li p {
+  color: #d9d9d9;
+}
+/* ----------------------------- */
+body.dark .after-footer p {
+  color: #d9d9d9;
+}
+/* ----------- */
+#mode {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+/* ----------- */
+.sunpadrao {
+  background-image: url("img/sun.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.troca {
+  background-image: url("img/moon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
